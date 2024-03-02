@@ -2,7 +2,7 @@
     <div class="container mt-2.5">
         <div class="row">
                 <div class="col-bd-12">
-                    <img class="img-thumbnail gallery-img" src="/{{$ImageInView}}" alt="">
+                    <img class="img-thumbnail gallery-img" src="/{{$ImageInView->image}}" alt="">
                 </div>
         </div>
     </div>
