@@ -6,8 +6,9 @@
 
         <div class="row">
             <div class="col-bd-5">
-                <form action="/update/{{$ImageInView->id}}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('update',['id'=>$ImageInView->id]) }}" method="POST" enctype="multipart/form-data">
                     {{csrf_field()}}
+                    {{ method_field('PUT') }}
                     <div class="form-control mt-2.5">
                         <input type="file" name="image">
                     </div>
