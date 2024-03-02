@@ -4,8 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Services\ImageService;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Storage;
 
 class ImageController extends Controller
 {
