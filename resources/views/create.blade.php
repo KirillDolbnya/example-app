@@ -3,6 +3,9 @@
         <h1 class="text-white">Add Image</h1>
         <div class="row">
             <div class="col-bd-5">
+                @foreach($errors->all() as $error)
+                    {{$error}}
+                @endforeach
                 <form action="/store" method="post" enctype="multipart/form-data">
                     {{csrf_field()}}
                     <div class="form-control mt-2.5">
