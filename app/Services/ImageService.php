@@ -11,7 +11,7 @@ class ImageService{
         $images = DB::table('images')->select('*')->get();
         $myImages =  $images->all();
 
-        return $myImages;
+        return collect($myImages);
     }
 
     public function add($image){
