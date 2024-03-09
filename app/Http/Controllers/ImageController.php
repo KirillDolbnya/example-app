@@ -36,7 +36,7 @@ class ImageController extends Controller
 
         $this->images->add($image);
 
-        return redirect('/');
+        return redirect('/dashboard');
     }
 
     public function edit($id){
@@ -45,13 +45,13 @@ class ImageController extends Controller
 
     public function update(Request $request,$id){
         $this->images->update($id,$request->image);
-        return redirect('/');
+        return redirect('/dashboard');
     }
 
     public function delete($id){
         $this->images->delete($id);
 
-        return redirect('/');
+        return redirect('/dashboard');
     }
 }
 
