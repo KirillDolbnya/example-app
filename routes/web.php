@@ -18,7 +18,7 @@ use App\Http\Controllers\ImageController;
 */
 
 
-Route::middleware(['auth', 'verified'])->group(function () {
+Route::middleware(['auth', 'verified','admin'])->group(function () {
     Route::controller(ImageController::class)->group(function (){
         Route::get('/dashboard', 'index')->name('dashboard.index');
         Route::get('/create', 'create')->name('create');
